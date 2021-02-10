@@ -1,0 +1,179 @@
+@import './futura_pt.css';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Futura PT Medium';
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input, textarea {
+    outline: none;
+    border: none;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    padding: 0 80px;
+}
+
+/* header */
+
+.header {
+    padding-top: 3px;
+    padding-bottom: 30px;
+}
+.header .row{
+    justify-content:space-between;
+    align-items: start;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #A89365;
+    margin: 0px;
+    font-family: 'Futura PT Extra Bold';
+}
+.show__portfolio{
+    font-weight: normal;
+    color: #575757;
+    text-transform: uppercase;
+    font-family: 'Futura PT Light';
+    line-height: 30px;
+    font-size: 18px;
+    display: block;
+    position: relative;
+    padding-right: 20px;
+}
+.show__portfolio::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 3px;
+    background-image: url(../img/link-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 center;
+}
+/* slider */
+
+.slider__item {
+    max-width: 410px;
+    margin-left: 40px;
+    outline: none;
+}
+
+.portfolio__image {
+    width: 100%;
+}
+
+.portfolio__title {
+    font-size: 32px;
+    color: #A89365;
+    margin: 20px 0;
+    font-weight: 700;
+    font-family: 'Futura PT Demi';
+}
+
+.portfolio__text {
+    font-weight: normal;
+    color: #575757;
+    font-family: 'Futura PT Light';
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/* arrows settings */
+
+.slick-arrow{
+    position: absolute;
+    top: 38%;
+    transform: translateY(-50%);
+    z-index: 500;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.slick-prev{
+    left: 0px;
+    background-image: url(../img/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slick-next{
+    right: -20px;
+    background-image: url(../img/arror-right.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.dots-style{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.dots-style button{
+    width: 12px;
+    height: 12px;
+    font-size: 0px;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+    margin: 5px;
+    border: none;
+    outline: none;
+}
+.dots-style li[class="slick-active"] button{
+    background-color: #A89365;
+}
+
+/*  footer */
+
+.footer {
+    padding-top: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.sign__button {
+    display: block;
+    margin-left: 40px;
+    font-family: 'Futura PT Light';
+    font-weight: normal;
+    line-height: 23px;
+    padding: 19px 62px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#reg1 {
+    background-color: transparent;
+    border: 1px solid #A89365;
+    color: #A89365;
+}
+
+#reg2 {
+    background-color: #A89365;
+    color: #fff;
+}
